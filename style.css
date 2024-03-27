@@ -1,0 +1,711 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+html,
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.495);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+#navbar__logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3.3vmin;
+
+}
+
+.social{
+    align-items: center;
+    display: flex;
+}
+.social img{
+    display: flex;
+    background: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navbar__item{
+    height: 80px;
+}
+.navbar__links{
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+.navbar__links:hover{
+    color: cornsilk ;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidemenu{
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background: rgba(47, 46, 46, 0.681);
+    
+}
+.wrapper .sidemenu h2{
+    font-size: 4vmin;
+    padding-top: 20px;
+    color: red;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.wrapper .sidemenu ul li{
+    padding: 15px;
+}
+
+.wrapper .sidemenu ul li a{
+    font-size: 2vmin;
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-left: 
+    15px;
+}
+.wrapper .sidemenu ul li:hover{
+    background: red;
+}
+.wrapper .sidemenu ul li:hover a{
+    color: rgb(144, 214, 24);
+}
+
+.wrapper .sidemenu .tradinghour{
+    font-size: 1.3vmin;
+    position: fixed;
+    top: 410px;
+    bottom:410px;
+    color: aliceblue;
+    text-align: center;
+}
+.wrapper .sidemenu .social{
+    position: absolute;
+
+    bottom: 20%;
+    transform: translateX(10%);
+    display: flex;
+}
+.wrapper .sidemenu .social img{
+    display: block;
+    width: 20px;
+    background: white;
+    height: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 7px;
+}
+.wrapper .sidemenu .social img:hover{
+    background: rgb(107, 103, 95);
+}
+
+.wrapper .sidemenu .copyright{
+    font-size: 1.1vmin;
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    transform: translateX(-9%);
+}
+
+/*text style start*/
+
+.home-text{
+    
+    font-size: 3.5vmin;
+    position: absolute;
+    top: 45%;
+    bottom: 50%;
+    color: red;
+    padding-left: 250px;
+    text-align: center;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgba(255, 0, 191, 0.742);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/*text style ends*/
+
+
+
+
+.about-mall{
+    position: absolute;
+    top: 60px;
+    width: 600px;
+    padding-bottom: 100px;
+    padding-left: 50%;
+
+}
+.about-mall h2{
+    color: rgba(238, 16, 16, 0.979);
+    font-size: 4vmin;
+    margin: 0;
+}
+.about-mall p{
+    width: 60%;
+    color: rgb(248, 10, 10);
+    font-size: 1.5vmin;
+    border-radius: 1%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+
+.phone-about-text{
+   display: none;
+}
+
+
+
+.event-text{
+    left: 150px;
+    width: 21%;
+    padding-left: 10%;
+}
+.event-text h2{
+    position: absolute;
+
+    color: rgba(238, 16, 16, 0.979);
+    font-size: 3vmin;
+    
+}
+.event-text p{
+    position: absolute;
+    color: rgb(230, 7, 7);
+    border-radius: 1%;
+    background-color: rgba(0, 0, 0, 0.529);
+   
+}
+
+
+
+
+.phone-event-text{
+    display: none;
+}
+
+
+.contact-text{
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    width: 40%;
+    padding-left: 10%;
+}
+
+.contact-text h2{
+    color: rgba(238, 16, 16, 0.979);
+    font-size: 4vmin;
+    margin: 0;
+}
+.contact-text p{
+    color: rgb(230, 7, 7);
+    border-radius: 1%;
+    background-color: rgba(0, 0, 0, 0.529);
+    padding: 9%;
+}
+
+.phone-contact-text{
+    display: none;
+}
+
+.stores-text{
+    color: red;
+    width: 100%;
+    position: absolute;
+    left: 200px;
+}
+.all-container{
+    background-color: rgba(0, 0, 0, 0.47);
+    position: relative;
+    border-radius: 5px;
+    max-width: 1350px;
+    width: 55%;
+    margin: 50px;
+}
+
+.filter_buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+button{
+    color: rgb(14, 13, 13);
+    padding: 10px 10px;
+    font-size: 14px;
+    border: none;
+    background: rgba(255, 255, 255, 0.127);
+    box-shadow: 0 0 10px ;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button.active{
+    background: red;
+    color: aliceblue;
+}
+.filterable_cards{
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+flex-basis: 300px;
+background-color: rgb(148, 53, 53);
+padding: 2px;
+border-radius: 8px;
+}
+.card.hide {
+    display: none;
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.card_body{
+    padding: 2px ;
+}
+.card_title{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+.card_text{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-background{
+    height: 100vh;
+    background-image: url(img/shopping1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.stores-background{
+    height: 100vh;
+    background-image: url(img/pexels-pixabay-264512.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.about-background{
+    height: 100vh;
+    background-image: url(img/hero-Mall-of-Africa\ 1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.event-background{
+    height: 100vh;
+    background-image: url(img/event\ .jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.contact-background{
+    height: 100vh;
+    background-image: url(img/charlesdeluvio-FK81rxilUXg-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+
+
+@media(max-width: 320px){
+    
+    .home-text{
+        font-size: 1vmin;
+        position: absolute;
+        top: 45%;
+        right: 25px;
+        bottom: 50%;
+        color: rgb(249, 27, 27);
+        padding-left: 10%;
+        text-align: center;
+    }
+    .home-text h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home-text p{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 375px){
+    
+    .home-text h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home-text p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    .home-text{
+        text-align: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 425px){
+   
+   .home-text{
+    padding-left: 25%;
+   }
+
+   .about-background{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+   }
+
+   .phone-about-text{
+    font-size: 90%;
+    position: absolute;
+    top: 90px;
+    padding-top: 0;
+    display: block;
+   }
+    
+   
+   .phone-about-text h2{
+    font-size: 8vmin;
+    color: red;
+   }
+   .phone-about-text p{
+    font-size: 3vmin;
+    padding-top: 42%;
+    text-align: center;
+   }
+   
+   .about-text{
+    display: none;
+   }
+
+   .event-background{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y:top;
+   }
+   
+   .phone-event-text{
+    font-size: 90%;
+    position: absolute;
+    top: 20%;
+    display: block;
+   }
+
+   .phone-event-text h2{
+    color: red;
+    font-size: 8vmin;
+   }
+   .phone-event-text p{
+    font-size: 3vmin;
+    padding-top: 10%;
+    
+   }
+
+   .event-text{
+    display: none;
+   }
+   
+   .contact-background{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y:top; 
+   }
+   .phone-contact-text{
+    font-size: 90%;
+    position: absolute;
+    top: 20%;
+    display: block;
+   }
+
+   .phone-contact-text h2{
+    color: red;
+    font-size: 8vmin;
+   }
+
+   .phone-contact-text p{
+    font-size: 3vmin;
+    padding-top: 20%;
+   }
+
+   .contact-text{
+    display: none;
+   }
+   .all-container{
+    position: absolute;
+    right: 50%;
+   }
+}
+
+
+
+@media only screen and (max-width: 677px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    .home-text{
+        position: absolute;
+        font-size: 2.2vmin;
+        
+    }
+
+    .event-text{
+        position: absolute;
+        top: 20%;
+        right: 300px;
+        width: 500px;
+    }
+    .navbar{
+        display: inline;
+    }
+
+    .wrapper{
+        display: none;
+    }
+
+   .navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+   }
+   .navbar__menu{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+     top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.351);
+   }
+
+   .navbar__menu.active{
+    background-color: rgba(0, 0, 0, 0.915);
+    top: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+   }
+   #navbar__logo{
+    padding: 25px;
+    color: brown;
+   }
+
+   .social{
+    padding-right: 100px;
+   }
+   .social img{
+    width: 3.5vmin;
+    border-radius: 11px
+   }
+   .navbar__toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: rgb(233, 1, 1);
+   }
+   .navbar__item{
+    width: 100%;
+   }
+   .navbar__links{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+   }
+   #mobile-menu{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+   }
+
+   .navbar__toggle .bar{
+    display: block;
+    cursor: pointer;
+    z-index: 999;
+   }
+   #mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+   }
+   #mobile-menu.is-active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+   }
+   #mobile-menu.is-active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+   }
+
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .event-text{
+        position: absolute;
+        top: 20%;
+        right: 300px;
+        width: 500px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1280px){}
+@media only screen and (max-width: 1536px){
+    .event-text{
+        position: absolute;
+        top: 20%;
+        right: 300px;
+        width: 500px;
+    }
+}
